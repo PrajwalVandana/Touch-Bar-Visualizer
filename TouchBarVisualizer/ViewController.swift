@@ -210,7 +210,7 @@ class ViewController: NSViewController {
 		guard var systemDefault = simplyCA.defaultOutputDevice else {
 			fatalError("There was no default system audio device detected, this is weird")
 		}
-		guard let blackHole = AudioDevice.lookup(by: "BlackHole2ch_UID") else {
+		guard let blackHole = AudioDevice.lookup(by: "BlackHole16ch_UID") else {
 			return
 		}
 		
